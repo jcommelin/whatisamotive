@@ -64,19 +64,49 @@ that also shared a lot of properties with singular cohomology and $\ell$-adic
 	\item crystalline cohomology, which fills the gap for $\ell = p$ that
 		the $\ell$-adic \'{e}tale cohomology theories left open.
 \end{itemize} % -}}}
-The result was that in roughly two decades the stage changed drastically; and
-where there was a shortage of suitable cohomology theories there was now an
-abundance of them:
+The result was that in roughly two decades the stage changed drastically; where
+there was a shortage of suitable cohomology theories there is now an abundance
+of them:
 \begin{itemize} % {{{-
-	\item $H_{\mathrm{sing}}$ singular cohomology, for varieties over a
+	\item $H_{\mathrm{sing}}$: singular cohomology, for varieties over a
 		subfield of $\mathbb{C}$;
-	\item $H_{\ell}$ $\ell$-adic \'{e}tale cohomology, for varieties over a
-		field of characteristic $p \ne \ell$;
-	\item $H_{\mathrm{dR}}$ algebraic de Rham cohomology, for all
+	\item $H_{\ell}$: $\ell$-adic \'{e}tale cohomology, for varieties over
+		a field of characteristic $p \ne \ell$;
+	\item $H_{\mathrm{dR}}$: algebraic de Rham cohomology, for all
 		varieties;
-	\item $H_{\mathrm{cris}}$ crystalline cohomology, for varieties over
+	\item $H_{\mathrm{cris}}$: crystalline cohomology, for varieties over
 		perfect fields of characteristic $p > 0$.
 \end{itemize} % -}}}
+Note some of the differences:
+\begin{itemize} % {{{-
+	\item The vector spaces $H_{x}^{i}(X)$ are vector spaces over different
+		fields depending on $x \in \{\mathrm{sing}, \ell, \mathrm{dR},
+		\mathrm{cris}\}$;
+	\item The cohomology theories do not work for arbitrary fields $k$;
+		each puts its own restrictions on $k$.
+\end{itemize} % -}}}
+Nevertheless, these cohomology theories also share a lot in common. For $x \in
+\{\mathrm{sing}, \ell, \mathrm{dR}, \mathrm{cris}\}$ and a variety $X$ of
+dimension $n$, we have
+\begin{itemize} % {{{-
+	\item The rule $X \mapsto H_{x}^{i}(X)$ is a contravariant functor.
+		That is, a map of varieties $X \to Y$ induces a linear map
+		$H_{x}^{i}(Y) \to H_{x}^{i}(X)$;
+	\item $\dim H_{x}^{0}(X) = 1 = \dim H_{x}^{2n}(X)$;
+	\item For all $i < 0$ and $i > 2n$ we have $H_{x}^{i}(X) = 0$;
+	\item For all $i$ we have $\dim H_{x}^{i}(X) = \dim H_{x}^{2n-i}(X)$;
+\end{itemize} % -}}}
+Moreover, suppose that $X$ is a variety over a field $k$ that allows for
+different choices of $x$ (say $k$ is a subfield of $\mathbb{C}$, so that we can
+take $x$ to be $\mathrm{sing}$, a prime $\ell$, or $\mathrm{dR}$). In this
+situation $\dim H_{x}^{i}(X)$ does not depend on the choice of $x$.
+
+The above similarities give only a weak impression of the actual amount of
+features that these cohomology theories share. The similarities were formalised
+by FIXME, and cohomology theories that satisfy the formalised list of
+properties are nowadays called \emph{Weil cohomology theories}.
+
+
 
 \bibliographystyle{plain}
 \bibliography{bib}
