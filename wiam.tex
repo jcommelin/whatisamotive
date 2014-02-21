@@ -115,6 +115,30 @@ space, and look at the set of lines through the origin. (Indeed, a line
 through the origin consists of vectors that are scalar multiples of each
 other.)
 
+From the definition we see that the number of points of
+$\mathbb{P}^{n}(\mathbb{F}_{q})$ is equal to
+\[
+	(q^{n+1} - 1)/(q-1) = 1 + q + q^{2} + \ldots + q^{n}.
+\]
+
+On the other hand, we may look at the $\ell$-adic \'{e}tale cohomology groups
+$H_{\ell}^{i}(\mathbb{P}^{n}(\mathbb{F}_{q}))$ for some prime $\ell$ not
+dividing $q$. First of all, these groups are $0$ if $i$ is odd, and
+$1$-dimensional if $i$ is even. Secondly, they carry a natural representation
+of the absolute Galois group
+$\mathrm{Gal}(\overline{\mathbb{F}}_{q}/\mathbb{F}_{q})$. The Frobenius element
+$\sigma \in \mathrm{Gal}(\overline{\mathbb{F}}_{q}/\mathbb{F}_{q})$ is defined
+by $\overline{\mathbb{F}}_{q} \to \overline{\mathbb{F}}_{q}, x \mapsto x^{q}$.
+
+Now the crucial fact is that $\sigma$ acts as multiplication with $q^{i}$ on
+$H_{\ell}^{2i}(\mathbb{P}^{n}(\mathbb{F}_{q}))$. A fancy way to say this, is
+that the eigenvalue of $\sigma$ acting on
+$H_{\ell}^{2i}(\mathbb{P}^{n}(\mathbb{F}_{q}))$ is $q^{i}$. In particular the
+trace of $\sigma$ acting on
+$H_{\ell}^{\bullet}(\mathbb{P}^{n}(\mathbb{F}_{q})) = \bigoplus_{i}
+H_{\ell}^{2i}(\mathbb{P}^{n}(\mathbb{F}_{q}))$ is equal to the number of points
+of $\mathbb{P}^{n}(\mathbb{F}_{q})$.
+
 \section{Jacobians}
 
 \bibliographystyle{plain}
