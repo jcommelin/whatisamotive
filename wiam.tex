@@ -2,6 +2,8 @@
 
 \usepackage[]{amsmath,amssymb}
 
+\usepackage[]{tikz-cd}
+
 \title{What is a motive?}
 \author{Johan~M.~Commelin}
 
@@ -160,6 +162,51 @@ algebraic flavour). Moreover, the identity
 \]
 shows that the jacobian variety `captures' the cohomological information in
 degree $1$ of $X$.
+
+\section{So what should a motive be?}
+
+We have explained that there are several cohomology theories that share a lot
+of properties, but also have some incomparable differences.
+\[
+	\begin{tikzcd}[column sep=8em] % {{{-
+		\null & \mathrm{Vect}_{\mathbb{Q}} \\
+		& \mathrm{Vect}_{\mathbb{Q}_{2}} \\
+		\mathcal{V}_{k}
+		\ar{uur}[near end]{H_{\mathrm{sing}}}
+		\ar{ur}[near end]{H_{2}}
+		\ar{r}[near end]{H_{3}}
+		\ar{ddr}[near end]{H_{\ell}}
+		& \mathrm{Vect}_{\mathbb{Q}_{3}} \\
+		& \vdots \\
+		& \mathrm{Vect}_{\mathbb{Q}_{\ell}} \\
+		& \vdots
+	\end{tikzcd} % -}}}
+\]
+The idea of motives is that there should be a category $\mathcal{M}_{k}$ that
+has an algebraic flavour sitting in between:
+\[
+	\begin{tikzcd}[column sep=8em] % {{{-
+		\null && \mathrm{Vect}_{\mathbb{Q}} \\
+		&& \mathrm{Vect}_{\mathbb{Q}_{2}} \\
+		\mathcal{V}_{k} \rar{}
+		\ar[bend left]{uurr}{H_{\mathrm{sing}}}
+		\ar[bend left]{urr}{H_{2}}
+		\ar[bend right]{ddrr}{H_{\ell}}
+		& \mathcal{M}_{k}
+		\ar{uur}[near end]{H'_{\mathrm{sing}}}
+		\ar{ur}[near end]{H'_{2}}
+		\ar{r}[near end]{H'_{3}}
+		\ar{ddr}[near end]{H'_{\ell}}
+		& \mathrm{Vect}_{\mathbb{Q}_{3}} \\
+		&& \vdots \\
+		&& \mathrm{Vect}_{\mathbb{Q}_{\ell}} \\
+		&& \vdots
+	\end{tikzcd} % -}}}
+\]
+We stress that $\mathcal{M}_{k}$ has to have an algebraic flavour, because we
+do not want silly candidates as $\mathcal{M}_{k} = \mathcal{V}_{k}$. The
+algebraic flavour can be made more precise, by saying that $\mathcal{M}_{k}$
+should behave as the category of representations of a group.
 
 \bibliographystyle{plain}
 \bibliography{bib}
