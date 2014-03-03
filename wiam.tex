@@ -242,7 +242,7 @@ anything about. However, most approaches fall in two classes.
 		category has the nice properties we want. For example, we then
 		do not know if the $H^{i}$ has a corresponding motivic object.
 \end{itemize} % -}}}
-The Standard Conjectures of Grothendieck imply that these approaches can be
+The Standard conjectures of Grothendieck imply that these approaches can be
 brought together. And, as Grothendieck wrote at the end of the paper \cite{sc}
 introducing these conjectures:
 \begin{quote} % {{{-
@@ -250,6 +250,41 @@ introducing these conjectures:
 	standard conjectures seems to me to be the most urgent task in
 	algebraic geometry. \attrib{A.~Grothendieck, 1969}
 \end{quote} % -}}}
+
+\appendix
+
+\section{Algebraic cycles \& the Standard conjectures}
+
+An important r\^{o}le in the study of motives is played by algebraic cycles
+(roughly speaking: formal sums of closed subvarieties). Since cohomology is
+functorial, a map of varieties induces a map on cohomology. However, all these
+Weil cohomologies also come with a so called \emph{cycle class map}. This map
+sends subvarieties of $X$ to elements in the cohomology $H(X)$. Usually, the
+cohomology comes with some group action (e.g., by a Galois group), and the
+image of the cycle class map is always in the subspace that is invariant under
+the group action.
+
+If one takes two varieties $X$ and $Y$, and an algebraic cycle $Z$ on $X \times
+Y$, then the cycle class map gives an element $\gamma_{Z}$ of $H(X \times Y) =
+H(X) \otimes H(Y)$. One can then view $\gamma_{Z}$ as a map from $H(X)$ to
+$H(Y)$ (using Poincar\'{e} duality).
+
+This construction generalises the functoriality that I just mentioned. Given a
+map $f \colon X \to Y$, we can view the graph $\Gamma_{f}$ of $f$ as an
+algebraic cycle on $X \times Y$, namely $\Gamma_{f} = \{ (x,f(x)) | x \in X
+\}$.
+
+One approach to motives (falling in the second class mentioned in the
+Conclusion) is to enlarge the set of morphisms between varieties by declaring
+all algebraic cycles on $X \times Y$ to be morphisms from $X$ to $Y$.
+Afterwards, one also formally adds objects, so that all idempotent morphisms
+have kernels.
+
+The projection of $H(X) = \oplus_{i = 0}^{2n} H^{i}(X)$ onto $\oplus_{i \ne k}
+H^{i}(X)$ is and idempotent morphism with kernel $H^{k}(X)$. The Standard
+conjectures say that this morphism is induced by an algebraic cycle on $X
+\times X$. (This is actually a weak version of one part of the Standard
+conjectures.)
 
 \bibliographystyle{plain}
 \bibliography{bib}
