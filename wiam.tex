@@ -2,6 +2,7 @@
 
 \usepackage[]{amsmath,amssymb}
 
+\usepackage[]{attrib}
 \usepackage[]{tikz-cd}
 
 \title{What is a motive?}
@@ -210,7 +211,10 @@ should behave as the category of representations of a group.
 
 \section{Conclusion}
 
-We have seen that FIXME (give short summary of what has been said).
+We have seen that, because varieties are pretty difficult to study, several
+cohomology theories have been invented to attach (linear) algebraic objects to
+varieties. These theories share a lot of properties, and therefore we hope that
+there is a universal theory.
 
 \begin{center} % {{{-
 	\begin{minipage}{.75\textwidth} % {{{-
@@ -220,9 +224,32 @@ We have seen that FIXME (give short summary of what has been said).
 	\end{minipage} % -}}}
 \end{center} % -}}}
 
+Further, we saw that in the case of curves, the jacobian variety solves the
+problem. It is not known whether $H^{i}$ is in general `represented' by some
+object.
+
 I also promised to tell a bit about current approaches to defining motives. Let
 me first of all say that there are a lot of approaches that I do not know
-anything about. However, most FIXME
+anything about. However, most approaches fall in two classes.
+\begin{itemize} % {{{-
+	\item Either they focus on the nice categorical aspects that the
+		category of motives should have. But then, it cannot be shown
+		that the known cohomology theories factor throught this
+		category of motives.
+	\item The other approaches mainly focus on this `universal property'.
+		The make sure that all known cohomology theories factor through
+		the category of motives. But then we cannot show that this
+		category has the nice properties we want. For example, we then
+		do not know if the $H^{i}$ has a corresponding motivic object.
+\end{itemize} % -}}}
+The Standard Conjectures of Grothendieck imply that these approaches can be
+brought together. And, as Grothendieck wrote at the end of the paper \cite{sc}
+introducing these conjectures:
+\begin{quote} % {{{-
+	Alongside the problem of resolution of singularities, the proof of the
+	standard conjectures seems to me to be the most urgent task in
+	algebraic geometry. \attrib{A.~Grothendieck, 1969}
+\end{quote} % -}}}
 
 \bibliographystyle{plain}
 \bibliography{bib}
